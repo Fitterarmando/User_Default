@@ -18,17 +18,50 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d6-z1-Wmi">
-                    <rect key="frame" x="175" y="144" width="46" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d6-z1-Wmi">
+                    <rect key="frame" x="136.66666666666666" y="411" width="119.99999999999997" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spn-wk-Nz7">
+                    <rect key="frame" x="168.33333333333334" y="457" width="56.333333333333343" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="GET"/>
+                    <connections>
+                        <action selector="getButtonAction:" destination="-1" eventType="touchUpInside" id="ZX4-gv-DPt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="av5-iE-knp">
+                    <rect key="frame" x="168" y="508" width="57" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="PUT"/>
+                    <connections>
+                        <action selector="putButtonAction:" destination="-1" eventType="touchUpInside" id="VMg-G1-pOb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaA-p7-IWH">
+                    <rect key="frame" x="154.33333333333334" y="559" width="84.666666666666657" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="DELETE"/>
+                    <connections>
+                        <action selector="deleteButtonAction:" destination="-1" eventType="touchUpInside" id="aoO-Te-ifk"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="-2" y="20"/>
+            <constraints>
+                <constraint firstItem="eaA-p7-IWH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="48T-O8-Y1k"/>
+                <constraint firstItem="6d6-z1-Wmi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CSc-Aj-uMU"/>
+                <constraint firstItem="6d6-z1-Wmi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IEE-vm-A3H"/>
+                <constraint firstItem="eaA-p7-IWH" firstAttribute="top" secondItem="av5-iE-knp" secondAttribute="bottom" constant="16" id="NMd-Zx-a1E"/>
+                <constraint firstItem="Spn-wk-Nz7" firstAttribute="top" secondItem="6d6-z1-Wmi" secondAttribute="bottom" constant="16" id="Qjy-JJ-918"/>
+                <constraint firstItem="av5-iE-knp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f9T-pp-Fnt"/>
+                <constraint firstItem="av5-iE-knp" firstAttribute="top" secondItem="Spn-wk-Nz7" secondAttribute="bottom" constant="16" id="u5k-Yh-3pM"/>
+                <constraint firstItem="Spn-wk-Nz7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vgc-I1-omU"/>
+            </constraints>
+            <point key="canvasLocation" x="-2.2900763358778624" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
