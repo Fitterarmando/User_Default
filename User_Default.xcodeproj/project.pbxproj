@@ -13,6 +13,7 @@
 		765A8E802B1A36AF000342C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765A8E7F2B1A36AF000342C9 /* Assets.xcassets */; };
 		765A8E832B1A36AF000342C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765A8E812B1A36AF000342C9 /* LaunchScreen.storyboard */; };
 		765A8E8B2B1A3CA3000342C9 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 765A8E8A2B1A3CA3000342C9 /* HomeVC.xib */; };
+		765A8E942B1A5482000342C9 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765A8E932B1A5482000342C9 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		765A8E822B1A36AF000342C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		765A8E842B1A36AF000342C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		765A8E8A2B1A3CA3000342C9 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		765A8E932B1A5482000342C9 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		765A8E8C2B1A3CB5000342C9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				765A8E912B1A5454000342C9 /* Extensions */,
 				765A8E8F2B1A3D3A000342C9 /* Features */,
 			);
 			path = Presentation;
@@ -105,6 +108,14 @@
 				765A8E8A2B1A3CA3000342C9 /* HomeVC.xib */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		765A8E912B1A5454000342C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				765A8E932B1A5482000342C9 /* UserDefaults.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			files = (
 				765A8E7B2B1A36AE000342C9 /* HomeVC.swift in Sources */,
 				765A8E772B1A36AE000342C9 /* AppDelegate.swift in Sources */,
+				765A8E942B1A5482000342C9 /* UserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
